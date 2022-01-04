@@ -1,0 +1,12 @@
+<h3 class="space">Data Presentation of Title,Price ordered based on the descending popularity.</h3>
+<div class="container">
+    <main class="grid">
+      <article *ngFor="let product of products">
+        <div class="text">
+          <h3>Title: {{product.title}}</h3>
+          <p>Price: {{product.price}}</p>
+          <p>Polularity: {{product.popularity}}</p>
+        </div>
+      </article>
+    </main>
+  </div>
